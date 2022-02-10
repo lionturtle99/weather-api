@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title></title>
+  <title>Weather</title>
 </head>
 <body>
-  <img src="assets/img/rpg-cover.jpeg">
-
+  <div class="container">
+    <div class="jumbotron">
+      <img src="./assets/images/pixel-sun.png">
+      <!-- <video controls width="250">
+        <source src="./assets/videos/matrix.mp4"
+                type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <figure>
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio
+            controls
+            src="./assets/audio/test.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure> -->
+      <h1>Your API Dream Scape!</h1>
+    </div>
+    
+    <label for="location">Enter a location:</label><br>
+    <input id="location" type="text" required><br>
+    <label for="location">Optionally search for a gif:</label><br>
+    <input id="gif" type="text"><br>
+    <input type="radio" id="kelvins" name="temp" value="standard" checked>
+    <label for="kelvins">Kelvins</label>
+    <input type="radio" id="fahrenheit" name="temp" value="imperial">
+    <label for="fahrenheit">Fahrenheit</label> <br>
+    <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    <div class="output-box">
+      <div class="showErrors"></div>
+      <div class="showHumidity"></div>
+      <div class="showClouds"></div>
+      <div class="showTemp"></div>
+      <div class="showF"></div>
+      <div class="showWeather"></div>
+      <div id="showWind"></div>
+      <div id="showSpeed"></div>
+      <div class="weather-description"></div>
+      <div class="show-gif"></div>
+      <div class="showJoke"></div>
+    </div>
+    <h2>joke</h2>
+    <button class="btn-success" id="joke">Get joke</button>
+  </div>
 </body>
 </html>

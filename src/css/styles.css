@@ -1,1 +1,21 @@
-
+body {
+  background: linear-gradient(rgb(63, 242, 255), rgb(255, 85, 113), orange);
+  height: 100vh;
+  color: white;
+}
+.jumbotron {
+  margin: 3em;
+  text-align:center;
+  position: relative;
+}
+.jumbotron h1 {
+  position: absolute; 
+  /* top: calc(50% - 24px); */
+  top: 50%;
+  left: 0;
+  width: 100%; 
+  text-shadow: black 5px 5px;
+}
+.output-box {
+  float: right;
+}
